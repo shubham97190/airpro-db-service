@@ -26,4 +26,5 @@ urlpatterns = [
     path('', include('device.urls')),
     path('', include('neighbor.urls')),
     path('', include('vif.urls')),
+    path('', include('base.urls')),
 ]

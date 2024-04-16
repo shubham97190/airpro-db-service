@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'influxdb_metrics',
     'rest_framework',
     'drf_spectacular',
     'base',
@@ -142,3 +143,12 @@ SPECTACULAR_SETTINGS = {
     'SERVE_INCLUDE_SCHEMA': False,
     # OTHER SETTINGS
 }
+
+INFLUXDB_HOST = '127.0.0.1'
+INFLUXDB_PORT = '8086'
+INFLUXDB_USER = 'airpro'
+INFLUXDB_PASSWORD = 'admin@123'
+INFLUXDB_DATABASE = 'airpro'
+INFLUXDB_TIMEOUT = 5
+INFLUXDB_USE_THREADING = False
+INFLUXDB_USE_CELERY = True
