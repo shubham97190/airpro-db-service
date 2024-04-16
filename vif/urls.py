@@ -4,5 +4,4 @@ from .views import VIFViewSet
 router = DefaultRouter()
 router.register('vif', VIFViewSet)
 
-
-urlpatterns=router.urls
+urlpatterns = router.urls
